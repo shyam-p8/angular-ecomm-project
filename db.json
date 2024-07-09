@@ -1,0 +1,144 @@
+{
+  "seller": [
+    {
+      "id": "2058",
+      "name": "shyam",
+      "email": "shyam@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "0971",
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "b862",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "ecfa",
+      "name": "ravi",
+      "password": "ravu",
+      "email": "ravi@gmail.com"
+    },
+    {
+      "id": "f9c4",
+      "name": "vijay",
+      "password": "vijay",
+      "email": "vijay"
+    },
+    {
+      "id": "9c8b",
+      "name": "shyam123",
+      "password": "shyam123",
+      "email": "shyam123"
+    },
+    {
+      "id": "9a5f",
+      "name": "pankaj",
+      "password": "pankaj",
+      "email": "pankaj"
+    },
+    {
+      "id": "1189",
+      "name": "",
+      "password": "",
+      "email": ""
+    }
+  ],
+  "product": [
+    {
+      "name": "Redmi 13 5G",
+      "price": "15000",
+      "color": "Black and White",
+      "category": "mobile",
+      "description": "Storage 128GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Red",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "2"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Blue",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Green",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "4"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Orange",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "5"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Yellow",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "6"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Tomato",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "7"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Red",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "8"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Red",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "9"
+    },
+    {
+      "name": "Samsung",
+      "price": "10000",
+      "color": "Red",
+      "category": "mobile",
+      "description": "Storage 128 GB RAM 6 GB",
+      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
+      "id": "10"
+    }
+  ]
+}
