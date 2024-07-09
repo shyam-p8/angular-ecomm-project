@@ -140,5 +140,25 @@
       "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
       "id": "10"
     }
+  ],
+  "users": [
+    {
+      "id": "d5d7",
+      "name": "vijay",
+      "email": "shyam@gmail.com",
+      "password": "indore"
+    },
+    {
+      "id": "749b",
+      "name": "new",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "11df",
+      "name": "new_user",
+      "email": "newuser@gmail.com",
+      "password": "new123"
+    }
   ]
 }
