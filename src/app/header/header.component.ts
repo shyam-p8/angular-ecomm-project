@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   menuType: string = 'default';
   sellerName: string = '';
   searchResult: undefined | product[];
-
+  userName: string = ''
   constructor(private router: Router, private productService: ProductService) {
   }
   ngOnInit(): void {
@@ -23,18 +23,29 @@ export class HeaderComponent implements OnInit {
           let sellerStore = localStorage.getItem('seller');
           let sellerData = sellerStore && JSON.parse(sellerStore)[0];
           this.sellerName = sellerData.name;
-
           this.menuType = 'seller'
-        } else {
+        } else if (localStorage.getItem('user')) {
+          let userStore = localStorage.getItem('user');
+          let userData = userStore && JSON.parse(userStore)
+          this.userName = userData.name
+          this.menuType = 'user'
+
+        }
+        else {
           this.menuType = 'default';
         }
       }
 
     })
   }
-  logout() {
+  sellerLogout() {
     localStorage.removeItem('seller');
     this.router.navigate(['/'])
+  }
+
+  userLogout() {
+    localStorage.removeItem('user');
+    this.router.navigate(['/user-auth'])
   }
   searchProduct(query: KeyboardEvent) {
     if (query) {
@@ -53,12 +64,11 @@ export class HeaderComponent implements OnInit {
     this.searchResult = undefined;
   }
 
-  searchSubmit(val:string){
+  searchSubmit(val: string) {
     this.router.navigate([`search/${val}`]);
   }
-  redirectToDetail(id:string)
-  {//search reasult link
-    this.router.navigate(['details/'+id]);
+  redirectToDetail(id: string) {//search reasult link
+    this.router.navigate(['details/' + id]);
   }
 
 }

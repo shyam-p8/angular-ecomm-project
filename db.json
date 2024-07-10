@@ -47,6 +47,12 @@
       "name": "",
       "password": "",
       "email": ""
+    },
+    {
+      "id": "28b0",
+      "name": "electronics",
+      "password": "123456",
+      "email": "shyam.p8@gmail.com"
     }
   ],
   "product": [
@@ -159,6 +165,30 @@
       "name": "new_user",
       "email": "newuser@gmail.com",
       "password": "new123"
+    },
+    {
+      "id": "8475",
+      "name": "shyam",
+      "email": "shyam.p8@gmail.com",
+      "password": "321654"
+    },
+    {
+      "id": "f6c4",
+      "name": "shyam",
+      "email": "shyam.p8@gmail.com",
+      "password": "wee"
+    },
+    {
+      "id": "6dbe",
+      "name": "shyam",
+      "email": "shyam.p8@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "471d",
+      "name": "shyam",
+      "email": "shyam.p8@gmail.com",
+      "password": "12132"
     }
   ]
 }
