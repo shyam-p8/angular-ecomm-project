@@ -153,14 +153,7 @@
       "name": "vijay",
       "email": "shyam@gmail.com",
       "password": "indore"
-    },
-    {
-      "id": "749b",
-      "name": "new",
-      "email": "",
-      "password": ""
-    },
-    {
+    },{
       "id": "11df",
       "name": "new_user",
       "email": "newuser@gmail.com",
@@ -170,25 +163,7 @@
       "id": "8475",
       "name": "shyam",
       "email": "shyam.p8@gmail.com",
-      "password": "321654"
-    },
-    {
-      "id": "f6c4",
-      "name": "shyam",
-      "email": "shyam.p8@gmail.com",
-      "password": "wee"
-    },
-    {
-      "id": "6dbe",
-      "name": "shyam",
-      "email": "shyam.p8@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": "471d",
-      "name": "shyam",
-      "email": "shyam.p8@gmail.com",
-      "password": "12132"
+      "password": "123456"
     }
-  ]
+    ]
 }
