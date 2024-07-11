@@ -13,9 +13,24 @@
 <div *ngIf="showLogin" class="user-login">
     <h1>User Login</h1>
     <form #userLogin ="ngForm" (ngSubmit)="login(userLogin.value)" class="common-form">
-        <input class="form-input" type="text" placeholder="Enter Email" name="email" ngModel />
-        <input class="form-input" type="password" placeholder="Enter Password" name="password" ngModel />
-        <button class="form-button">login</button>
+        <input 
+        class="form-input" type="text"
+        placeholder="Enter Email"
+        name="email" ngModel
+        #email="ngModel" required
+        />
+        <p class="invalid-input"><span *ngIf="email.invalid && email.touched">enter a valid email id </span></p>
+        <input 
+        class="form-input"
+        type="password"
+        placeholder="Enter Password"
+        name="password" ngModel 
+        #password="ngModel"
+        required
+        minlength="4"
+        />
+        <p class="invalid-input"><span *ngIf="password.invalid && password.touched">enter minimum 4 character password</span></p>
+        <button class="form-button" [disabled]="userLogin.invalid">login</button>
         <p>Want to create account ? <a (click)="openSingUp()">Click here</a></p>
     </form>
 </div>
