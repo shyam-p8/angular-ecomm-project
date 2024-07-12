@@ -13,6 +13,7 @@
 <div *ngIf="showLogin" class="user-login">
     <h1>User Login</h1>
     <form #userLogin ="ngForm" (ngSubmit)="login(userLogin.value)" class="common-form">
+        <p class="error-p">{{authError}}</p>
         <input 
         class="form-input" type="text"
         placeholder="Enter Email"

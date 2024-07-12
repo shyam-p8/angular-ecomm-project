@@ -10,10 +10,10 @@ import { product } from '../data-type';
 })
 export class HeaderComponent implements OnInit {
 
-  menuType: string = 'default';
-  sellerName: string = '';
+  menuType: string = "";
+  sellerName: string = "";
   searchResult: undefined | product[];
-  userName: string = ''
+  userName: string = "";
   constructor(private router: Router, private productService: ProductService) {
   }
   ngOnInit(): void {
@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
           this.menuType = 'seller'
         } else if (localStorage.getItem('user')) {
           let userStore = localStorage.getItem('user');
-          let userData = userStore && JSON.parse(userStore)[0];
+          let userData = userStore && JSON.parse(userStore);
           this.userName = userData.name;
           this.menuType = 'user';
         } else {

@@ -26,18 +26,18 @@ export class UserService {
     }
   }
 
-  userLogin(data:login){
-    this.http.get<signUp[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`,{observe:'response'})
-    .subscribe((result)=>{
-      if(result && result.body?.length){
-        this.invalidUserAuth.emit(true);
-        localStorage.setItem('user',JSON.stringify(result.body[0]));
-        this.route.navigate(['/']);
-      }else{
-        this.invalidUserAuth.emit(false);
-      }
+  userLogin(data: login) {
+    this.http.get<signUp[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`, { observe: 'response' })
+      .subscribe((result) => {
+        if (result && result.body?.length) {
+          this.invalidUserAuth.emit(false);
+          localStorage.setItem('user', JSON.stringify(result.body[0]));
+          this.route.navigate(['/']);
+        } else {
+          this.invalidUserAuth.emit(true);
+        }
 
-    })
+      })
 
   }
 

@@ -49,3 +49,6 @@ cursor: pointer;
 button:disabled{
     cursor: not-allowed;
 }
+.error-p{
+    color: red;
+}
