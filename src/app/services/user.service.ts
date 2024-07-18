@@ -30,14 +30,13 @@ export class UserService {
     this.http.get<signUp[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`, { observe: 'response' })
       .subscribe((result) => {
         if (result && result.body?.length) {
-          this.invalidUserAuth.emit(false);
           localStorage.setItem('user', JSON.stringify(result.body[0]));
+          this.invalidUserAuth.emit(false);
           this.route.navigate(['/']);
         } else {
           this.invalidUserAuth.emit(true);
         }
-
-      })
+      });
 
   }
 
