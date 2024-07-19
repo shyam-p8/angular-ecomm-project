@@ -61,5 +61,14 @@ export class ProductService {
     return this.httpClient.post<cart>("http://localhost:3000/cart",cartData);
   }
 
+  getCartList(userId:string){
+    return this.httpClient.get<product[]>('http://localhost:3000/cart?userId='+userId,{observe:'response'}).
+    subscribe((result)=>{
+    if(result && result.body){
+      this.totalCartData.emit(result.body);
+    }
+    });
+  }
+
 
 }

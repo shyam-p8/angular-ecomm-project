@@ -33,6 +33,11 @@ export class ProductDetailsComponent implements OnInit {
       this.removecart=false;
      }
     }
+    let user = localStorage.getItem('user');
+    if(user){
+      let userId = user && JSON.parse(user).id;
+      this.productService.getCartList(userId); 
+    }
 
   }
   handleQuantity(value: string) {
@@ -58,8 +63,10 @@ export class ProductDetailsComponent implements OnInit {
       }
       delete cartData.id;
       this.productService.addToCart(cartData).subscribe((result)=>{
-        if(result)
-          alert("product added");
+        if(result){
+         this.productService.getCartList(userId);
+         this.removecart=true;
+        }
       });
     }
     }
