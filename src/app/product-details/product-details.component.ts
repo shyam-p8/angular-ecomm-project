@@ -37,6 +37,12 @@ export class ProductDetailsComponent implements OnInit {
     if(user){
       let userId = user && JSON.parse(user).id;
       this.productService.getCartList(userId); 
+      this.productService.totalCartData.subscribe((result)=>{
+        let item = result.filter((item:product)=>productId===item.productId);
+        if(item.length){
+          this.removecart=true;
+        }
+      });
     }
 
   }

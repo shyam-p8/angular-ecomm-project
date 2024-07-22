@@ -41,12 +41,14 @@ export class ProductService {
     let localCart = localStorage.getItem('localCart');
     if (!localCart) {
       localStorage.setItem('localCart', JSON.stringify([data]));
+      this.totalCartData.emit([data]);
     } else {
       cartData = JSON.parse(localCart);
       cartData.push(data);
       localStorage.setItem('localCart',JSON.stringify(cartData));
+      this.totalCartData.emit(cartData)
     }
-    this.totalCartData.emit(cartData);
+   // this.totalCartData.emit(cartData);
   }
   removeItemFromCart(productId: string) {
     let cartData = localStorage.getItem('localCart');
