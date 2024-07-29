@@ -74,7 +74,7 @@ export class ProductService {
   removeToCart(cartId: string) {
     return this.httpClient.delete('http://localhost:3000/cart/' + cartId);
   }
-  currentcart() {
+  currentCart() {
     let loggedInUser = localStorage.getItem('user');
     let loggedInUserInfo = loggedInUser && JSON.parse(loggedInUser);
     return this.httpClient.get<cart[]>('http://localhost:3000/cart?userId=' + loggedInUserInfo.id);
