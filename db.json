@@ -276,5 +276,16 @@
       "userId": "8475",
       "productId": "4"
     }
+  ],
+  "orders": [
+    {
+      "id": "d43c",
+      "email": "shyam.p8@gmail.com",
+      "address": "555, indore",
+      "contact": "8989898989",
+      "totalPrice": 71500,
+      "orderType": "cash",
+      "userId": "d5d7"
+    }
   ]
 }
