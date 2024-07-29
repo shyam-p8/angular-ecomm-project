@@ -14,14 +14,24 @@ export class MyOrdersComponent implements OnInit {
 
  }
   ngOnInit(): void {
-   this.productService.myOrders().subscribe((res)=>{
-    this.myOrders=res;
-    console.warn(this.myOrders);
-     });
-   
-   
+     this.getOrderList();
   }
 
+getOrderList(){
+  this.productService.myOrders().subscribe((res)=>{
+    this.myOrders=res;
+   });
+}
 
+cancelOrder(orderId:string|undefined){
+
+  orderId && this.productService.cancelOrder(orderId).subscribe((result)=>{
+if(result){
+  alert("order cancelled");
+  this.getOrderList();
+}
+  })
+
+}
 
 }

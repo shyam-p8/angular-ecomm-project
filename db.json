@@ -204,42 +204,6 @@
       "totalPrice": 35800,
       "orderType": "cash",
       "userId": "d5d7"
-    },
-    {
-      "id": "f665",
-      "email": "test@example.us",
-      "address": "1600 Amphitheatre Parkway, Apartment 1",
-      "contact": "6019521325",
-      "totalPrice": 71500,
-      "orderType": "cash",
-      "userId": "d5d7"
-    },
-    {
-      "id": "ead8",
-      "email": "test@example.us",
-      "address": "1600 Amphitheatre Parkway, Apartment 1",
-      "contact": "6019521325",
-      "totalPrice": 25600,
-      "orderType": "cash",
-      "userId": "d5d7"
-    },
-    {
-      "id": "1adf",
-      "email": "test@example.us",
-      "address": "1600 Amphitheatre Parkway, Apartment 1",
-      "contact": "6019521325",
-      "totalPrice": 260200,
-      "orderType": "cash",
-      "userId": "8475"
-    },
-    {
-      "id": "6731",
-      "email": "test@example.us",
-      "address": "1600 Amphitheatre Parkway, Apartment 1",
-      "contact": "6019521325",
-      "totalPrice": 61300,
-      "orderType": "cash",
-      "userId": "8475"
     }
   ]
 }

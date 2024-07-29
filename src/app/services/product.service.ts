@@ -87,6 +87,8 @@ myOrders(){
   let loggedInUserInfo = loggedInUser && JSON.parse(loggedInUser);
   return this.httpClient.get<orderData[]>('http://localhost:3000/orders?userId='+loggedInUserInfo.id);
 }
-
+cancelOrder(orderId:string){
+return this.httpClient.delete('http://localhost:3000/orders/'+orderId);
+}
 
 }
