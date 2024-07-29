@@ -1,1 +1,38 @@
-<p>my-orders works!</p>
+<div class="my-orders">
+    <h1>My Orders</h1>
+    <div class="row">
+        <div class="col-sm-2">
+            <span>Order</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Order Id</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Price</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Status</span>
+        </div>
+        <div class="col-sm-2">
+            <span>Action</span>
+        </div>
+    </div>
+    <div *ngFor="let order of myOrders" class="row order-data">
+        <div class="col-sm-2">
+            <img src="https://www.w3schools.com/images/picture.jpg" alt="My Order Image" class="order-img">
+        </div>
+        <div class="col-sm-2">
+            <span>{{order.id}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>{{order.totalPrice}}</span>
+        </div>
+        <div class="col-sm-2">
+            <span>In-process</span>
+        </div>
+        <div class="col-sm-2">
+           <button class="form-button">Cancel Order</button>
+        </div>
+    </div>
+
+</div>

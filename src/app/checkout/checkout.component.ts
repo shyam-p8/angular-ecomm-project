@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
-import { orderData, priceSummary } from '../data-type';
+import { cart, orderData, priceSummary } from '../data-type';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,8 +9,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
+  [x: string]: any;
   
-
+  currentCart:cart[]|undefined;
+  orderMsg:string|undefined;
   priceSummary : priceSummary={
     price:0,
       discount:0,
@@ -25,6 +27,7 @@ export class CheckoutComponent implements OnInit {
       this.productService.currentCart().subscribe((result) => {
       let price=0;
       if (result) {
+        this.currentCart=result;
       result.forEach((item)=>{
           if(item.quantity){
       price=price + (+item.price * +item.quantity);
@@ -46,9 +49,11 @@ export class CheckoutComponent implements OnInit {
    order.userId=user && JSON.parse(user).id;
   this.productService.orderNow(order).subscribe((result)=>{
   if(result){
-    alert("order placed and order id: "+result.id);
-    this.router.navigate(['/my-orders']);
-    
+    this.orderMsg="your order has been placed. thansk!"
+    this.currentCart?.forEach((item)=>{
+     setTimeout(()=>{ item.id && this.productService.removeToCart(item.id).subscribe((res)=>{console.warn('this data deleted from cart',res)})},300);
+    }) ;  
+   setTimeout(()=>{this.router.navigate(['/my-orders']); this.orderMsg=undefined}, 3000);
   }
   });
   }

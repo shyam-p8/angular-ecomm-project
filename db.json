@@ -167,125 +167,79 @@
       "password": "123456"
     }
   ],
-  "cart": [
-    {
-      "id": "786d",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Tomato",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 3,
-      "productId": "7",
-      "userId": "8475"
-    },
-    {
-      "id": "a706",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Blue",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 1,
-      "userId": "8475",
-      "productId": "3"
-    },
-    {
-      "id": "32a5",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Red",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 2,
-      "userId": "d5d7",
-      "productId": "2"
-    },
-    {
-      "id": "6a65",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Red",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 5,
-      "userId": "d5d7",
-      "productId": "2"
-    },
-    {
-      "id": "ef87",
-      "name": "Redmi 13 5G",
-      "price": "15000",
-      "color": "Black and White",
-      "category": "mobile",
-      "description": "Storage 128GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 1,
-      "userId": "8475",
-      "productId": "1"
-    },
-    {
-      "id": "61e9",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Red",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 1,
-      "userId": "8475",
-      "productId": "8"
-    },
-    {
-      "id": "72b3",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Orange",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 1,
-      "userId": "8475",
-      "productId": "5"
-    },
-    {
-      "id": "193f",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Yellow",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 1,
-      "userId": "8475",
-      "productId": "6"
-    },
-    {
-      "id": "70a9",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Green",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 17,
-      "userId": "8475",
-      "productId": "4"
-    }
-  ],
+  "cart": [],
   "orders": [
     {
-      "id": "d43c",
-      "email": "shyam.p8@gmail.com",
-      "address": "555, indore",
-      "contact": "8989898989",
+      "id": "e610",
+      "email": "test@example.us",
+      "address": "1600 Amphitheatre Parkway, Apartment 1",
+      "contact": "6019521325",
+      "totalPrice": 30700,
+      "orderType": "cash",
+      "userId": "d5d7"
+    },
+    {
+      "id": "8ded",
+      "email": "test@example.us",
+      "address": "1600 Amphitheatre Parkway, Apartment 1",
+      "contact": "6019521325",
+      "totalPrice": 20500,
+      "orderType": "cash",
+      "userId": "d5d7"
+    },
+    {
+      "id": "70f2",
+      "email": "test@example.us",
+      "address": "1600 Amphitheatre Parkway, Apartment 1",
+      "contact": "6019521325",
+      "totalPrice": 35800,
+      "orderType": "cash",
+      "userId": "d5d7"
+    },
+    {
+      "id": "5b3c",
+      "email": "test@example.us",
+      "address": "1600 Amphitheatre Parkway, Apartment 1",
+      "contact": "6019521325",
+      "totalPrice": 35800,
+      "orderType": "cash",
+      "userId": "d5d7"
+    },
+    {
+      "id": "f665",
+      "email": "test@example.us",
+      "address": "1600 Amphitheatre Parkway, Apartment 1",
+      "contact": "6019521325",
       "totalPrice": 71500,
       "orderType": "cash",
       "userId": "d5d7"
+    },
+    {
+      "id": "ead8",
+      "email": "test@example.us",
+      "address": "1600 Amphitheatre Parkway, Apartment 1",
+      "contact": "6019521325",
+      "totalPrice": 25600,
+      "orderType": "cash",
+      "userId": "d5d7"
+    },
+    {
+      "id": "1adf",
+      "email": "test@example.us",
+      "address": "1600 Amphitheatre Parkway, Apartment 1",
+      "contact": "6019521325",
+      "totalPrice": 260200,
+      "orderType": "cash",
+      "userId": "8475"
+    },
+    {
+      "id": "6731",
+      "email": "test@example.us",
+      "address": "1600 Amphitheatre Parkway, Apartment 1",
+      "contact": "6019521325",
+      "totalPrice": 61300,
+      "orderType": "cash",
+      "userId": "8475"
     }
   ]
 }

@@ -82,5 +82,11 @@ export class ProductService {
 orderNow(order:orderData){
   return this.httpClient.post<orderData>('http://localhost:3000/orders',order);
 }
+myOrders(){
+  let loggedInUser = localStorage.getItem('user');
+  let loggedInUserInfo = loggedInUser && JSON.parse(loggedInUser);
+  return this.httpClient.get<orderData[]>('http://localhost:3000/orders?userId='+loggedInUserInfo.id);
+}
+
 
 }
