@@ -52,3 +52,7 @@ button:disabled{
 .error-p{
     color: red;
 }
+
+.max-width{
+    width: 100%;
+}

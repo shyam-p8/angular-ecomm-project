@@ -275,18 +275,6 @@
       "quantity": 17,
       "userId": "8475",
       "productId": "4"
-    },
-    {
-      "id": "2c46",
-      "name": "Samsung",
-      "price": "10000",
-      "color": "Tomato",
-      "category": "mobile",
-      "description": "Storage 128 GB RAM 6 GB",
-      "image": "https://m.media-amazon.com/images/I/81juPhKSZJL._SL1500_.jpg",
-      "quantity": 2,
-      "userId": "d5d7",
-      "productId": "7"
     }
   ]
 }
