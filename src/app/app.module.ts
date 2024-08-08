@@ -19,7 +19,23 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
-
+import { FooterComponent } from './footer/footer.component';
+import { WebDesignComponent } from './web-design/web-design.component';
+import { TableBasicExampleComponent } from './table-basic-example/table-basic-example.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {AfterViewInit, Component, ViewChild} from '@angular/core';
+import {MatPaginator} from '@angular/material/paginator';
+import { TablePageSortComponent } from './table-page-sort/table-page-sort.component';
+import {MatSort, Sort} from '@angular/material/sort';
+import { FigmaDesignComponent } from './figma-design/figma-design.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,11 +50,18 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
     UserAuthComponent,
     CartPageComponent,
     CheckoutComponent,
-    MyOrdersComponent
+    MyOrdersComponent,
+    FooterComponent,
+    WebDesignComponent,
+    TableBasicExampleComponent,
+    TablePageSortComponent,
+    FigmaDesignComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,HttpClientModule, FontAwesomeModule, NgbModule
+    AppRoutingModule, FormsModule, HttpClientModule, FontAwesomeModule, NgbModule, BrowserAnimationsModule, MatTableModule, MatPaginatorModule,
+    MatSortModule, MatFormFieldModule,MatInputModule, MatButtonModule, MatDividerModule, MatIconModule,MatTableModule, MatPaginatorModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

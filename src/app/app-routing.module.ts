@@ -12,6 +12,11 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
+import { FooterComponent } from './footer/footer.component';
+import { WebDesignComponent } from './web-design/web-design.component';
+import { TableBasicExampleComponent } from './table-basic-example/table-basic-example.component';
+import { TablePageSortComponent } from './table-page-sort/table-page-sort.component';
+import { FigmaDesignComponent } from './figma-design/figma-design.component';
 
 const routes: Routes = [
   {
@@ -66,6 +71,29 @@ const routes: Routes = [
     path:'my-orders',
     component:MyOrdersComponent,
     // canActivate:[AuthGuard]
+  },
+  {
+    path:'footer',
+    component:FooterComponent,
+    // canActivate:[AuthGuard]
+  },
+  {
+    path:'web-design',
+    component:WebDesignComponent,
+    // canActivate:[AuthGuard]
+  },
+  {
+    path:'table-basic-example',
+    component:TableBasicExampleComponent,
+    // canActivate:[AuthGuard]
+  },
+  {
+    path:'table-page-sort',
+    component:TablePageSortComponent
+  },
+  {
+    path:'figma-design',
+    component:FigmaDesignComponent
   }
 ];
 

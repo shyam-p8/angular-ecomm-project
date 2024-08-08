@@ -165,6 +165,12 @@
       "name": "shyam",
       "email": "shyam.p8@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "00ac",
+      "name": "",
+      "email": "",
+      "password": ""
     }
   ],
   "cart": [],
@@ -204,6 +210,15 @@
       "totalPrice": 35800,
       "orderType": "cash",
       "userId": "d5d7"
+    },
+    {
+      "id": "639b",
+      "email": "shyam.p8@gmail.com",
+      "address": "555, indore",
+      "contact": "6019521325",
+      "totalPrice": 10300,
+      "orderType": "cash",
+      "userId": "8475"
     }
   ]
 }

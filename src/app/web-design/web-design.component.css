@@ -1,0 +1,34 @@
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.readData{
+    margin-top: 15px;
+    border:  2px solid tomato;;
+   
+}
+
+.readData .heading{
+    font-size: large;
+    
+}
+
+.readData .heading .th{
+  border-right: 2px solid tomato;
+  border-bottom: 2px solid tomato;
+  text-align: center;
+    
+}
+
+.readData .tableData .td{
+    border-right: 2px solid tomato;
+    border-bottom: 2px solid tomato;
+    text-align: center;
+      
+  }
+
+  .row{
+     }

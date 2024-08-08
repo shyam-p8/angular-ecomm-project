@@ -1,0 +1,38 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div style="border: 1px solid black; width: 99%;height: 32px;">
+        <form #meterRead="ngForm" (ngSubmit)="getMeterReading(meterRead.value)" >
+        <div class="row" style="margin: 0%;" >
+            <div class="col-sm-4"style="background-color:lavender;"><b style="display: flex; justify-content: center;  color: rgb(93, 93, 243);">enter meter number</b></div>
+            <!-- <div class="col-sm-4 centered" style="background-color:lavender; ">enter meter number</div> -->
+            <div class="col-sm-4 centered " style=" display: flex; justify-content: center; background-color:lavender;"><input type="text" name="meterNo" ngModel #meterNo="ngModel" required/>
+            <span *ngIf="meterNo.touched && meterNo.invalid" style="color: red; margin-left: 1%;">enter meter no. </span>
+            </div>
+            <div class="col-sm-4 centered" style="background-color:lavender; "><button class="btn btn-primary ms-1" style="width: 50%; height:30px;" [disabled]="meterRead.invalid">Search</button></div>
+         </div>
+        
+         <div class="readData">      
+         <div class="heading" style="margin: 0%; display: flex; " >
+            <div class="col-sm-2 th">Id</div>
+            <div class="col-sm-2 th">Reading Date</div>
+            <div class="col-sm-2 th">Ex-Kwh</div>
+            <div class="col-sm-2 th">Ex-KW</div>
+            <div class="col-sm-2 th">Current State</div>
+            <div class="col-sm-2 th">Upload Date</div>
+         </div>
+         <div class="tableData" style="margin: 0%; display: flex; " *ngFor="let read of meterReadings">
+            <div class="col-sm-2 td">{{read.id}}</div>
+            <div class="col-sm-2 td">{{read.readingDate}}</div>
+            <div class="col-sm-2 td">{{read.eactiveEnergy}}</div>
+            <div class="col-sm-2 td">{{read.emaxDemand}}</div>
+            <div class="col-sm-2 td">{{read.currentState}}</div>
+            <div class="col-sm-2 td">{{read.createdOn}}</div>
+         </div>
+        </div>
+        </form>
+    </div>	   
+</body>
+</html>

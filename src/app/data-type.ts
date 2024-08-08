@@ -52,3 +52,26 @@ totalPrice:number,
 orderType:string,
 userId:string
 }
+
+export interface meterData{
+    meterNo:string | undefined
+}
+
+export interface meterReading{
+        id:number,
+        meterNo:string,
+        readingDate: string,
+        currentState: string,
+        createdOn: string,
+        eactiveEnergy: string,
+        emaxDemand: string,
+        iactiveEnergy: string,
+        imaxDemand: string,
+}
+
+export interface PeriodicElement {
+    name: string;
+    position: number;
+    weight: number;
+    symbol: string;
+  }
